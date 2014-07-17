@@ -1,0 +1,286 @@
+body {
+  min-width: 320px;
+  color: #666;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#advanced {
+  position:relative;
+  z-index:998;
+  height:50px;
+  top:0;
+  left:0
+}
+
+#advanced .bg {
+  height:50px;
+  border-bottom:1px solid #cbc999;
+  background:#ffffe6;
+  -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow:0 1px 2px rgba(0, 0, 0, 0.2)
+}
+
+@media(min-width:1200px) {
+  .top_container {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 1170px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:979px) {
+  .top_container {
+    width:724px
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .top_container {
+    width:100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+}
+
+.responsive-block {
+  width: 550px;
+  float:left;
+  height: 50px;
+  position: absolute;
+  top: -5px;
+  display: none;
+  left: 40%;
+  margin-left: -130px;
+  display: block;
+}
+
+.website-url {
+  float: right;
+  height: 24px;
+  margin: 16px 0 0 0;
+  width: 300px;
+  font-size: 17px;
+}
+
+#responsivator {
+  float: left;
+  margin: 16px 0 0 0;
+  padding: 0;
+  padding-left: 7px;
+}
+
+#responsivator li {
+  float: left;
+  margin: 0 17px 0 0;
+}
+
+#responsivator li.active {
+  float: left;
+}
+
+#responsivator li.qr {
+  opacity: 1 !important;
+}
+
+ul {
+  list-style-type: none
+}
+
+*, a:focus {
+  outline: none !important
+}
+
+#desktop {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background:url("../img/sprite.png") no-repeat scroll 3px 0 transparent;
+  width:34px;
+  height:26px;
+  display: block;
+  float: right;
+  margiN: 1px 0 0 1px;
+  cursor: pointer;
+}
+#desktop:hover,
+#desktop.active {
+  background:url("../img/sprite.png") no-repeat scroll 3px -34px transparent;
+}
+
+#tablet-landscape {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background:url("../img/sprite.png") no-repeat scroll -49px 0 transparent;
+  width:22px;
+  height:22px;
+  display: block;
+  float: right;
+  margiN: 1px 0 0 1px;
+  cursor: pointer;
+}
+#tablet-landscape:hover,
+#tablet-landscape.active {
+  background:url("../img/sprite.png") no-repeat scroll -49px -34px transparent;
+}
+
+#tablet-portrait {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background:url("../img/sprite.png") no-repeat scroll -90px 0 transparent;
+  width:18px;
+  height:24px;
+  display: block;
+  float: right;
+  margiN: 1px 0 0 1px;
+  cursor: pointer;
+}
+#tablet-portrait:hover,
+#tablet-portrait.active {
+  background:url("../img/sprite.png") no-repeat scroll -91px -33px transparent;
+}
+
+#iphone-landscape {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background:url("../img/sprite.png") no-repeat scroll -129px 0 transparent;
+  width:20px;
+  height:20px;
+  display: block;
+  float: right;
+  margiN: 1px 0 0 1px;
+  cursor: pointer;
+}
+#iphone-landscape:hover,
+#iphone-landscape.active {
+  background:url("../img/sprite.png") no-repeat scroll -128px -33px transparent;
+}
+
+#iphone-portrait {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background:url("../img/sprite.png") no-repeat scroll -166px 0 transparent;
+  width:12px;
+  height:26px;
+  display: block;
+  float: right;
+  margiN: 1px 0 0 1px;
+  cursor: pointer;
+}
+#iphone-portrait:hover,
+#iphone-portrait.active {
+  background:url("../img/sprite.png") no-repeat scroll -166px -33px transparent;
+}
+
+
+.liveframe-color {
+  background: #161616;
+  background: -moz-linear-gradient(left, #161616 0%, #333333 50%, #161616 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#161616), color-stop(50%,#333333), color-stop(100%,#161616));
+  background: -webkit-linear-gradient(left, #161616 0%,#333333 50%,#161616 100%);
+  background: -o-linear-gradient(left, #161616 0%,#333333 50%,#161616 100%);
+  background: -ms-linear-gradient(left, #161616 0%,#333333 50%,#161616 100%);
+  background: linear-gradient(to right, #161616 0%,#333333 50%,#161616 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#161616',GradientType=1 );
+  padding-top: 1px;
+}
+
+
+/****************ipad land********************/
+.pad-land{
+  width: 1039px;
+  height: 690px;
+  left: calc(50% - 541px);
+  margin-top: 51px;
+}
+.wrap-pad-land{
+  background-image: url("../img/pad-land.png");
+  width: 100%;
+  height: 798px;
+  background-repeat: no-repeat;
+  /*margin-left: calc(50% - 621px);*/
+  margin-top: 10px;
+  background-position: center center;
+}
+
+/****************ipad port********************/
+.pad-port{
+  width: 783px;
+  height: 1038px;
+  left: calc(50% - 392px);
+  margin-top: 65px;
+}
+.wrap-pad-port{
+  background-image: url("../img/pad-port.png");
+  width: 100%;
+  height: 1213px;
+  background-repeat: no-repeat;
+  /*margin-left: calc(50% - 451px);*/
+  margin-top: 10px;
+  background-position: center center;
+}
+
+/****************iphone land********************/
+.phone-land{
+  width: 495px;
+  height: 335px;
+  left: calc(50% - 247px);
+  margin-top: 28px;
+}
+.wrap-phone-land{
+  background-image: url("../img/phone-land.png");
+  width: 100%;
+  height: 819px;
+  background-repeat: no-repeat;
+  /*margin-left: calc(50% - 380px);*/
+  margin-top: 10px;
+  background-position: center top;
+}
+
+/****************iphone port********************/
+.phone-port{
+  width: 335px;  
+  height: 495px;
+  left: calc(50% - 165px);
+  margin-top: 162px;
+}
+.wrap-phone-port{
+  background-image: url("../img/phone-port.png");
+  width: 100%;
+  height: 819px;
+  background-repeat: no-repeat;
+  /*margin-left: calc(50% - 199px);*/
+  margin-top: 10px;
+  background-position: center center;
+}
+
+/****************desctop********************/
+.desktop{
+  width: 100%;  
+  height: 100%;
+  left: 0;
+}
+.wrap-desctop{
+  background-image: none;
+  width: 0;
+  height: 0;
+  background-repeat: no-repeat;
+  margin-left: 0;
+  margin-top: 0;
+}
+.hide{
+  display: none;
+}
